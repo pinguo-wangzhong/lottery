@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53324D0F1A3F04F40020F910 /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53324D0E1A3F04F40020F910 /* BuyViewController.m */; };
+		53324D141A3F05AA0020F910 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 53324D131A3F05AA0020F910 /* UIImage+Extension.m */; };
+		53324D191A3F05FC0020F910 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53324D181A3F05FC0020F910 /* LoginViewController.m */; };
 		53AB13461A3EF6BE008E73B3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AB13451A3EF6BE008E73B3 /* NavigationController.m */; };
 		53EB2C181A3EBABD006ADF62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EB2C171A3EBABD006ADF62 /* main.m */; };
 		53EB2C1B1A3EBABD006ADF62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EB2C1A1A3EBABD006ADF62 /* AppDelegate.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53324D0D1A3F04F40020F910 /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
+		53324D0E1A3F04F40020F910 /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
+		53324D121A3F05AA0020F910 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		53324D131A3F05AA0020F910 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		53324D171A3F05FC0020F910 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		53324D181A3F05FC0020F910 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		53AB13441A3EF6BE008E73B3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		53AB13451A3EF6BE008E73B3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		53AB13471A3EFAE6008E73B3 /* lottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lottery-Prefix.pch"; sourceTree = "<group>"; };
@@ -70,6 +79,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53324D0B1A3F04D30020F910 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				53324D0C1A3F04DB0020F910 /* Controller */,
+			);
+			name = Buy;
+			sourceTree = "<group>";
+		};
+		53324D0C1A3F04DB0020F910 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53324D0D1A3F04F40020F910 /* BuyViewController.h */,
+				53324D0E1A3F04F40020F910 /* BuyViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		53324D101A3F05820020F910 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				53324D111A3F058F0020F910 /* Category */,
+				53EB2C191A3EBABD006ADF62 /* AppDelegate.h */,
+				53EB2C1A1A3EBABD006ADF62 /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		53324D111A3F058F0020F910 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				53324D121A3F05AA0020F910 /* UIImage+Extension.h */,
+				53324D131A3F05AA0020F910 /* UIImage+Extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		53324D151A3F05CD0020F910 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				53324D161A3F05D80020F910 /* Controller */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		53324D161A3F05D80020F910 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53324D171A3F05FC0020F910 /* LoginViewController.h */,
+				53324D181A3F05FC0020F910 /* LoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		53EB2C091A3EBABD006ADF62 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				53EB2C3B1A3EC913006ADF62 /* Classes */,
-				53EB2C191A3EBABD006ADF62 /* AppDelegate.h */,
-				53EB2C1A1A3EBABD006ADF62 /* AppDelegate.m */,
 				53EB2C151A3EBABD006ADF62 /* Supporting Files */,
 			);
 			path = lottery;
@@ -132,6 +192,9 @@
 		53EB2C3B1A3EC913006ADF62 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				53324D151A3F05CD0020F910 /* Mine */,
+				53324D101A3F05820020F910 /* Other */,
+				53324D0B1A3F04D30020F910 /* Buy */,
 				53EB2C3E1A3EC9C7006ADF62 /* Main */,
 				53EB2C3D1A3EC9C1006ADF62 /* Setting */,
 				53EB2C3C1A3EC9AE006ADF62 /* Hall */,
@@ -296,8 +359,11 @@
 				53EB2C471A3ECA7F006ADF62 /* TabBarController.m in Sources */,
 				53EB2C4A1A3EDFB1006ADF62 /* TabBarButton.m in Sources */,
 				53AB13461A3EF6BE008E73B3 /* NavigationController.m in Sources */,
+				53324D0F1A3F04F40020F910 /* BuyViewController.m in Sources */,
+				53324D191A3F05FC0020F910 /* LoginViewController.m in Sources */,
 				53EB2C1B1A3EBABD006ADF62 /* AppDelegate.m in Sources */,
 				53EB2C181A3EBABD006ADF62 /* main.m in Sources */,
+				53324D141A3F05AA0020F910 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

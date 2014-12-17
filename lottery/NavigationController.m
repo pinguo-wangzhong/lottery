@@ -39,6 +39,20 @@
     attrs[UITextAttributeTextColor] = [UIColor whiteColor];
     attrs[UITextAttributeFont] = [UIFont systemFontOfSize:16];
     [navBar setTitleTextAttributes:attrs];
+    
+    //2设置BarButton主题
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    NSMutableDictionary *itemAttr = [NSMutableDictionary dictionary];
+    itemAttr[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    itemAttr[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    [item setTitleTextAttributes:itemAttr forState:UIControlStateNormal];
+    
+    if (!iOS7) {
+        //设置按钮背景
+        [item setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [item setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    }
+    
 
 }
 
